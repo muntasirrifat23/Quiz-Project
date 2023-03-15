@@ -1,3 +1,8 @@
+// ........................Blog click another HTML.......................
+document.getElementById('btn-blog').addEventListener('click',function(){
+  window.location.href= 'myans.html';
+})
+
 // global variable declaration
 let count = 0;
 let timer;
