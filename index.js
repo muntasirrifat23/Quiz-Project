@@ -38,7 +38,7 @@ startQuiz.addEventListener("click", () => {
       rulesContainer.classList.add("hidden");
       alertContainer.classList.remove("hidden");
       submitContainer.classList.remove("hidden");
-      submitContainer.classList.add("hidden");
+      submitContainer.classList.add("flex");
       loadQuiz();
       quizTimer();
       clearInterval(x);
@@ -58,7 +58,7 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  if (data) {
+  if (!data) {
     quizContainer.innerHTML = "";
     return;
   }
